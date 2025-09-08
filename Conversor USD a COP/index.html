@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor USD ↔ COP</title>
+  <!-- Enlace al CSS externo -->
+  <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div class="container" id="contenedor">
+    <h1>Conversor de Monedas</h1>
+
+    <!-- Descripción breve -->
+    <p class="descripcion">
+      Esta herramienta convierte entre dólares (USD) y pesos colombianos (COP).  
+      La tasa de conversión utilizada es fija:
+    </p>
+    <p class="tasa">💲 1 USD = 4000 COP</p>
+
+    <!-- Formulario del conversor -->
+    <form id="form-conversor">
+      <label for="opcion">Seleccione el tipo de conversión:</label>
+      <!-- Menú desplegable -->
+      <select id="opcion">
+        <option value="usd-cop">USD → COP</option>
+        <option value="cop-usd">COP → USD</option>
+      </select>
+
+      <!-- Campo para escribir monto -->
+      <label for="monto">Ingrese el monto:</label>
+      <input type="text" id="monto" placeholder="Ejemplo: 25">
+
+      <!-- Botón de convertir -->
+      <button type="submit">Convertir</button>
+    </form>
+
+    <!-- Texto de resultado -->
+    <p id="resultado"></p>
+
+    <!-- Botones extra (inicialmente ocultos) -->
+    <div id="acciones" style="display:none;">
+      <button id="nueva-conversion">Realizar otra conversión</button>
+      <button id="salir">Salir</button>
+    </div>
+  </div>
+
+  <!-- Pantalla de despedida -->
+  <div id="despedida" style="display:none; text-align:center; color:white; font-size:22px;">
+    <p>👋 Gracias por usar el conversor.</p>
+    <p>🤣 Mira un video de Mateo bailando:  
+      <a href="https://www.youtube.com/watch?v=Ww47jDoWgOU&list=RDWw47jDoWgOU&start_radio=1" 
+         target="_blank" style="color: yellow;">
+        Haz clic aquí
+      </a>
+    </p>
+    <!-- Botón para volver al conversor -->
+    <button id="volver">Volver al conversor</button>
+  </div>
+
+  <!-- Enlace al JS -->
+  <script src="json/moneda.js"></script>
+</body>
+</html>

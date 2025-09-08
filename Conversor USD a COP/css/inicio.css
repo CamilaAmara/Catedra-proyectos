@@ -1,0 +1,107 @@
+/* Estilos generales del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0078ff, #00c6ff); /* fondo degradado */
+  color: #fff;
+  display: flex;             /* centra el contenedor */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;             /* ocupa toda la pantalla */
+  margin: 0;
+}
+
+/* Caja principal */
+.container {
+  background: #ffffff;
+  color: #222;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* sombra */
+  text-align: center;
+  width: 450px;
+  transition: transform 0.3s ease; /* animación suave */
+}
+
+/* Animación al pasar el mouse */
+.container:hover {
+  transform: scale(1.03); /* hace que se agrande */
+}
+
+/* Título */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0078ff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Texto descriptivo */
+.descripcion {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Caja que muestra la tasa */
+.tasa {
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 25px;
+  font-size: 18px;
+  background: #ffe4d1;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Input */
+input {
+  padding: 12px;
+  width: 90%;
+  border: 2px solid #0078ff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Botones */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #0078ff, #00c6ff); /* degradado */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Efecto hover del botón */
+button:hover {
+  background: linear-gradient(135deg, #005fcc, #0099ff);
+  transform: translateY(-2px); /*se hace un mini zoom */
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  background: #eaf4ff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
